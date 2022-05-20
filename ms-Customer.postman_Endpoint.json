@@ -71,7 +71,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/customer/628060e14d7885490d08b698",
+							"raw": "http://localhost:8080/customer/628806f4c0407834dbac65ce",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -79,7 +79,7 @@
 							"port": "8080",
 							"path": [
 								"customer",
-								"628060e14d7885490d08b698"
+								"628806f4c0407834dbac65ce"
 							]
 						}
 					},
