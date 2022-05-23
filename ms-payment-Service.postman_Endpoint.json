@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "c55564de-de81-49c7-8bfd-8b42f42f1c7f",
+		"name": "ms-payment-Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19426929"
+	},
+	"item": [
+		{
+			"name": "ms-payment-Service-week02",
+			"item": [
+				{
+					"name": "ms-payment-Service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCredit\": \"62827c1964647c6144919b2f\",\r\n    \"amount\": \"1200.00\",\r\n    \"dateLimit\": \"22-06-2022\",\r\n    \"commission\": \"2.15\",\r\n    \"description\": \"Deposito\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/payment/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"payment",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-payment-Service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/payment/allPayments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"payment",
+								"allPayments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-payment-Service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/payment/628a66c43ec62760a35ed156",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"payment",
+								"628a66c43ec62760a35ed156"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-payment-Service",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": \"1200.00\",\r\n    \"dateLimit\": \"24-06-2022\",\r\n    \"commission\": \"2.15\",\r\n    \"description\": \"Deposito\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8085/payment/update/628a72cf63b5211042e2d0e0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"payment",
+								"update",
+								"628a72cf63b5211042e2d0e0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-payment-Service",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8085/payment/delete/628a67a93ec62760a35ed15a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8085",
+							"path": [
+								"payment",
+								"delete",
+								"628a67a93ec62760a35ed15a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "f11aa59d-139c-443f-b8a8-d9cd76a42ec3",
+		"name": "ms-movement-Credit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19426929"
+	},
+	"item": [
+		{
+			"name": "ms-movement-credit-week02",
+			"item": [
+				{
+					"name": "ms-movement-credit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 500.0,\r\n    \"dateLimit\": \"16-06-2022\",\r\n    \"commission\": 2.25,\r\n    \"description\":\"Reservas\",\r\n    \"idCredit\":\"62827c1964647c6144919b2f\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/movementCredit/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"movementCredit",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-movement-credit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/movementCredit/allMovementCredits",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"movementCredit",
+								"allMovementCredits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-movement-credit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/movementCredit/62827e9b5d138250b0679939",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"movementCredit",
+								"62827e9b5d138250b0679939"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-movement-credit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\":1500.0,\r\n    \"dateLimit\": \"22-06-2022\",\r\n    \"commission\": 4.25,\r\n    \"description\":\"Reservas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/movementCredit/update/628a86c6fc5f8b3db8e7ee81",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"movementCredit",
+								"update",
+								"628a86c6fc5f8b3db8e7ee81"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-movement-credit",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/movementCredit/delete/628a870afc5f8b3db8e7ee82",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"movementCredit",
+								"delete",
+								"628a870afc5f8b3db8e7ee82"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
